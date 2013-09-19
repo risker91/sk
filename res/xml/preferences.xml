@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+            		 android:title="Оформление">
+                <ListPreference
+                        android:title="Стиль"
+                        android:summary="Светлый или темный фон"
+                        android:key="listPref"
+                        android:defaultValue="digiGreen"
+                        android:entries="@array/listArray"
+                        android:entryValues="@array/listValues" />
+        </PreferenceCategory>
+        <PreferenceCategory
+                android:title="Системные">
+     <ListPreference
+                        android:title="Авто-определение дня"
+                        android:summary="Способ выбор дня тренировки"
+                        android:key="listAuto"
+                        android:defaultValue="digiGreen"
+                        android:entries="@array/listArray2"
+                        android:entryValues="@array/listValues" />      
+      
+        <Preference
+                android:title="Custom Preference"
+                android:summary="This works almost like a button"
+                android:key="customPref" />
+        </PreferenceCategory>
+</PreferenceScreen>
